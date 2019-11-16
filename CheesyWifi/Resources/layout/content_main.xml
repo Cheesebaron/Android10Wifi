@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent"
+  app:layout_behavior="@string/appbar_scrolling_view_behavior"
+  tools:showIn="@layout/activity_main">
+  <android.support.design.widget.TextInputLayout
+    android:id="@+id/ssidInput"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginTop="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <EditText
+      android:id="@+id/ssid"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="SSID" />
+  </android.support.design.widget.TextInputLayout>
+  <android.support.design.widget.TextInputLayout
+    android:id="@+id/passphraseInput"
+    android:layout_below="@id/ssidInput"
+    android:layout_marginEnd="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <EditText
+      android:id="@+id/passphrase"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="Passphrase" />
+  </android.support.design.widget.TextInputLayout>
+  <Button
+    android:id="@+id/buttonRequest"
+    android:layout_below="@id/passphraseInput"
+    android:layout_marginEnd="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Request" />
+  <Button
+    android:id="@+id/buttonSuggest"
+    android:layout_below="@id/buttonRequest"
+    android:layout_marginEnd="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Suggest" />
+  <TextView
+    android:id="@+id/statusText"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_below="@id/buttonSuggest"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+</RelativeLayout>
